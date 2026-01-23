@@ -129,16 +129,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="openvc_coins.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\coins1.jfif" />
     <Image Include="images\coins_red_bg.jpg" />
-    <Image Include="images\img1.jfif" />
     <Image Include="images\img2.jfif" />
+    <Image Include="images\img3.jfif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="images\coins2.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CoinDetector.h" />
+    <ClInclude Include="ColorFinder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

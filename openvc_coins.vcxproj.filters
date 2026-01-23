@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="openvc_coins.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,10 +26,10 @@
     <Image Include="images\coins1.jfif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="images\img1.jfif">
+    <Image Include="images\img2.jfif">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="images\img2.jfif">
+    <Image Include="images\img3.jfif">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
@@ -37,5 +37,13 @@
     <None Include="images\coins2.webp">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ColorFinder.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CoinDetector.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
