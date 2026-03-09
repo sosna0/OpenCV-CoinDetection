@@ -1,6 +1,3 @@
-//#include <opencv2/core.hpp>
-//#include <opencv2/imgcodecs.hpp>
-//#include <opencv2/highgui.hpp>
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <string>
@@ -20,7 +17,6 @@ int main(int argc, char* argv[]) {
     }
 
     std::string image_path = argv[1];
-    //std::string image_path = samples::findFile("images/coins.jfif");
 
     Mat img = imread(image_path, IMREAD_COLOR);
 
@@ -50,12 +46,8 @@ int main(int argc, char* argv[]) {
         Mat imgContoursBGR;
         cvtColor(imgContours, imgContoursBGR, COLOR_GRAY2BGR);
 
-        Mat concatImages;// = Mat(img.rows, img.cols, img.type());
-        //std::println("img[{0},{1}] imgPre[{2},{3}]", img.cols, img.rows, imgPre.cols, imgPre.rows);
+        Mat concatImages;
         hconcat(imgLabeled, imgContoursBGR, concatImages);
-    
-        //imshow(windowName, imgLabeled);
-        //imshow(windowName + "2", imgContours);
         
         imshow(windowName, concatImages);
     }

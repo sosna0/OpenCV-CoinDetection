@@ -3,7 +3,7 @@
 #include <vector>
 #include <unordered_map>
 #include <numbers>
-#include<tuple>
+#include <tuple>
 
 
 using namespace cv;
@@ -31,7 +31,7 @@ private:
     float _1mmInPixels = 0;
     std::string trackbarCanny1 = "CannyThr1";
     std::string trackbarCanny2 = "CannyThr2";
-    std::string trackbarScale = "10cmInPixels";
+    std::string trackbarScale = "Scale";
     std::string _windowName = "TrackBars";
 
     Mat color_img;
